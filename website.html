@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Two Tickets, Please! 🎟️</title>
+  <link rel="stylesheet" href="website.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Kalam:wght@300;400;700&family=Patrick+Hand&family=Reenie+Beanie&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-doodles">
+      <span class="doodle d1">🎬</span>
+      <span class="doodle d2">✨</span>
+      <span class="doodle d3">🎞️</span>
+      <span class="doodle d4">💕</span>
+      <span class="doodle d5">🍿</span>
+      <span class="doodle d6">⭐</span>
+    </div>
+    <div class="hero-inner">
+      <div class="ticket-stub-badge">est. 2025</div>
+      <h1 class="logo">Two Tickets, Please!</h1>
+      <p class="tagline">because everything's better in pairs 💑</p>
+      <nav class="main-nav">
+        <a href="#movies">Films</a>
+        <a href="#solo" class="nav-solo">Flying Solo?</a>
+        <a href="#genres">Browse by Mood</a>
+        <a href="#" id="openProfileBtn">👤 My Profile</a>
+      </nav>
+    </div>
+    <div class="wavy-divider">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="var(--cream)"/></svg>
+    </div>
+  </header>
+
+  <!-- GENRE FILTER -->
+  <section class="genre-section" id="genres">
+    <div class="section-label">✏️ pick your vibe</div>
+    <div class="genre-pills">
+      <button class="pill active" data-genre="all">All Films 🎬</button>
+      <button class="pill" data-genre="animation">Animation 🎨</button>
+      <button class="pill" data-genre="romance">Romance 💌</button>
+      <button class="pill" data-genre="sci-fi">Sci-Fi 🚀</button>
+      <button class="pill" data-genre="crime">Crime 🔍</button>
+      <button class="pill" data-genre="thriller">Thriller 🌀</button>
+      <button class="pill" data-genre="mystery">Mystery 🎭</button>
+    </div>
+  </section>
+
+  <!-- MOVIES GRID -->
+  <main class="movies-section" id="movies">
+    <div class="section-label">🎟️ now showing & coming soon</div>
+    <div class="movies-grid" id="moviesGrid"></div>
+  </main>
+
+  <!-- SOLO SECTION -->
+  <section class="solo-section" id="solo">
+    <div class="solo-card">
+      <div class="solo-emoji">🧍</div>
+      <h2>Flying Solo?</h2>
+      <p>No couple? No problem! Find your perfect movie match — someone else is out there looking for a plus-one right now.</p>
+      <button class="btn-primary" id="soloMatchBtn">Find My Movie Match 💫</button>
+    </div>
+  </section>
+
+  <!-- BOOKING MODAL -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-card">
+      <button class="modal-close" id="closeModal">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- SOLO MATCH MODAL -->
+  <div class="modal-overlay" id="soloModal">
+    <div class="modal-card">
+      <button class="modal-close" id="closeSoloModal">✕</button>
+      <div id="soloContent"></div>
+    </div>
+  </div>
+  <div class="modal-overlay" id="profileModal">
+  <div class="modal-card modal-wide">
+    <button class="modal-close" id="closeProfileModal">✕</button>
+    <div id="profileContent"></div>
+  </div>
+</div>
+   <div class="modal-overlay" id="paymentModal">
+  <div class="modal-card">
+    <button class="modal-close" id="closePaymentModal">✕</button>
+    <div id="paymentContent"></div>
+  </div>
+</div>
+ 
+  <footer class="site-footer">
+    <p>made with 💕 for movie-loving pairs everywhere</p>
+    <p class="footer-small">Two Tickets, Please! — because third wheels belong on bicycles 🚲</p>
+  </footer>
+
+  <script src="website.js"></script>
+</body>
+</html>
